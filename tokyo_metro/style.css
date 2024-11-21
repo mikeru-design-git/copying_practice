@@ -1,0 +1,317 @@
+/* PC、スマホ共通スタイル */
+/* 全ての要素、疑似要素でborder-boxを適用 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-size: 14PX;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  margin: 0 auto;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+/* header */
+#header_wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 右上ナビ */
+#primary ul {
+  display: flex;
+  margin: 16px 0 0 0;
+}
+
+#primary li {
+  margin-left: 20px;
+  font-size: 0.8rem;
+}
+
+#primary a {
+  color: black;
+}
+
+#primary a:hover {
+  text-decoration: none;
+}
+
+/* 右下ナビ */
+#secondary {
+  display: flex;
+}
+
+.btnarea p{
+  background-color: #DFE0E5;
+  padding: 0 10px;
+  margin-left: 20px;
+
+}
+
+.btnarea a {
+  font-size: 13px;
+  color: #002063;
+  text-decoration: none;
+}
+
+
+/* グローバルナビ */
+#gnavi {
+  background-color: #002063;
+}
+
+#gnavi ul {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: space-around;
+  
+}
+
+.nav_list {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+
+.image-link {
+  display: block;
+  width: 60%;
+  font-size: 10px;
+  text-align: center;
+}
+
+
+.nav_list a {
+  display: block;
+  color: white;
+  padding-top: 14px;
+  text-decoration: none;
+  height: 52px;
+}
+
+#gnavi a:hover {
+  color: #002063;
+  background-color: white;
+}
+
+
+#pankuzu {
+  max-width: 960px;
+  margin: 10px auto 0px auto;
+  padding: 0 10px;
+}
+
+#pankuzu_list a {
+  color: #2463B0;
+  margin-right: 6px;
+  text-decoration: none;
+}
+
+#pankuzu_list a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* main共通 */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a {
+  color: #2463B0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* カテゴリ・日付 */
+#info {
+  margin-top: 20px;
+  /* 要素を横並びに */
+  display: flex;
+  height: 33px;
+  /* 縦方向に中央揃え　align-items */
+  align-items: center;
+}
+
+#info p {
+  margin-left: 10px;
+}
+
+/* h1 */
+h1 {
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 50px;
+  /* 🟥分からずコピペ */
+  background:#4D4D4D url(images/icon/h1_bg.gif) left bottom repeat-x;
+}
+
+
+#introduction {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+#introduction p {
+  margin-top: 40px;
+  line-height: 1.8;
+}
+
+
+h2 {
+  background-color: #18882D;
+  color: white;
+  padding: 10px 20px;
+}
+
+
+h3 {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background:#EFEFEF url(images/icon/h3_bg.gif) left bottom repeat-x;
+}
+
+
+h4 , h5 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+
+h4::before {
+  content: url(images/icon/h4_icon.gif);
+  margin-right: 8px;
+}
+
+h5::before {
+  content: url(images/icon/h5_icon.gif);
+  margin-right: 8px;
+}
+
+
+/* 矢印アイコンの装飾 */
+.arrow_link  {
+  margin: 5px 20px;
+} 
+
+.arrow_link::before {
+  content: url(images/icon/list_icon.png);
+  margin-right: 8px;
+}
+
+
+
+
+/* 余白調整 */
+.overview_contents {
+  margin-bottom: 30px;
+}
+
+
+/* 画像を中央揃えにするための親要素divに対する記述 */
+.wrap_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.gray_area p {
+  background-color: #EFEFEF;
+  width: auto;
+  padding: 10px;
+  border: solid 1px #878787;
+}
+
+
+/* フッター */
+/* 🟥理解があまい */
+#pnavi {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content:end;
+}
+
+.pnavi_btn {
+  background-color: #002063;
+  width: 170px;
+  height: 38px;
+  color: white;
+}
+
+/* 🟥paddingを使わない縦中央揃えのやり方が分からない */
+#pnavi p {
+  padding-top: 8px;
+ 
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+
+#foot_link {
+  background-color: #EFEFEF;
+  border-top: solid 3px #002063;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* 🟥flexをかける要素が分からない */
+#foot_link_list ul{
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 🟥ナビゲーション部分：ホバーで切り替えの記述方法は合っているのか？？ */
+#foot_link_list li {
+  background-color: white;
+  width: 236px;
+  height: 40px;
+  margin: 2px;
+}
+
+#foot_link_list a {
+  display: block;
+  padding-top: 8px;
+}
+
+#foot_link_list li:hover {
+  background-color:#002063;
+  width: 236px;
+  height: 40px;
+}
+
+#foot_link_list a:hover {
+  color: white;
+  text-decoration: none;
+}

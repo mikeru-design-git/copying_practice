@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="ja">
   <head>
     <title>東京グリーンビズ　イベント開催のお知らせ</title>
     <meta charset="UTF-8">
@@ -7,8 +8,8 @@
   </head>
   <body>
     <!-- ヘッダー -->
-    <header id="top">
-      <div id="header">
+    <header>
+      <div id="header_wrap">
         <div id="logo">
           <a href="index.html">
             <img src="images/header/logo.gif" alt="東京都">
@@ -23,13 +24,13 @@
             </ul>
           </div>
           <div id="secondary">
-            <div id="sitmap_btn">
+            <div class="btnarea">
               <p><a href="#">サイトマップ</a></p>
             </div>
             <div id="search_box">
               <!-- ？？？ -->
             </div>
-            <div id="search">
+            <div class="btnarea">
               <p><a href="#">検索ページ</a></p>
             </div>
           </div>
@@ -39,7 +40,7 @@
       <nav>
         <div id="gnavi">
           <ul>
-            <li class="top"><a href="#"><img src="images/icon/top_icon.png" alt="トップへ">トップ</a></li>
+            <li class="nav_list" ><a href="#">トップ</a></li>
             <li class="nav_list"><a href="#">暮らし・健康・福祉</a></li>
             <li class="nav_list"><a href="#">教育・文化・スポーツ</a></li>
             <li class="nav_list"><a href="#">産業・仕事</a></li>
@@ -49,17 +50,16 @@
         </div>
         <div id="pankuzu">
           <div id="pankuzu_list">
-            <p>
-            <a href="#">トップページ</a><span>></span>
-            <a href="#">都政情報</a><span>></span>
-            <a href="#">これまでの報道</a><span>></span>
-            <a href="#">報道発表</a><span>></span>
-            <a href="#">11月</a><span>></span>
-            <a>東京グリーンビズ イベント開催・PR動画公表</a>
-            </p>
+            <span><a href="#">トップページ</a>&gt;</span>
+            <span><a href="#">都政情報</a>&gt;</span>
+            <span><a href="#">これまでの報道</a>&gt;</span>
+            <span><a href="#">報道発表</a>&gt;</span>
+            <span><a href="#">11月</a>&gt;</span>
+            <span><a href="#">東京グリーンビズ イベント開催・PR動画公表</a></span> 
+          </div> 
         </div>
       </nav>
-
+    </header>
 
 
       <!-- メイン -->
@@ -85,37 +85,140 @@
           <!-- 1「東京グリーンビズDAY」の開催概要について -->
           <section id="first">
             <h2>1　「東京グリーンビズDAY」の開催概要について</h2>
-            <img src="images/01_02.png" alt="グリーンビズDAYバナー">
+            <div class="wrap_center"><img src="images/01_02.png" alt="グリーンビズDAYバナー"></div>
             <div class="overview">
-              <h3>（1）イベント名称</h3>
-              <p>「東京グリーンビズDAY　100年先を見据えて、今日、何をする？」</p>
-              <h3>（2）会場</h3>
-              <p>「東京大学　弥生キャンパス（東京都文京区本郷7-3-1）</p>
-              <h3>（3）日時</h3>
-              <p>令和6年11月30日（土曜日）　9時00分～18時00分（予定）</p>
-
+              <div class="overview_contents">
+                <h3>（1）イベント名称</h3>
+                <p>「東京グリーンビズDAY　100年先を見据えて、今日、何をする？」</p>
+              </div>
+              <div class="overview_contents">
+                <h3>（2）会場</h3>
+                <p>「東京大学　弥生キャンパス（東京都文京区本郷7-3-1）</p>
+              </div>
+              <div class="overview_contents">
+                <h3>（3）日時</h3>
+                <p>令和6年11月30日（土曜日）　9時00分～18時00分（予定）</p>
+              </div>
+              <!-- 詳細情報 -->
                <div class="details">
+                <div class="overview_contents">
+                 <h4>スケジュール（予定）</h4>
+                 <p>9時00分～12時00分</p>
+                </div>
+
+                <div class="overview_contents">
+                  <h4>場所</h4>
+                  <p>弥生キャンパス内　※集合は弥生講堂アネックス</p>
+                 </div>
+ 
+                 <div class="overview_contents">
+                  <h4>みんなで生き物一斉調査「BioBlitz（バイオブリッツ）」</h4>
+                  <p class="arrow_link">アプリを使用して弥生キャンパス内の生き物調査を実施します。</p>
+                  <p>※事前申込制（定員100名　先着順）</p>
+                  <p>13時30分～18時00分　</p>
+                 </div>
+ 
+                 <div class="overview_contents">
+                  <h4>場所</h4>
+                  <p>弥生講堂一条ホール内</p>
+                 </div>
+ 
+                 <div class="overview_contents">
+                  <h5>主催者挨拶</h5>
+                  <p>東京都知事　小池百合子（ビデオメッセージ）</p>
+                 </div>
+
+                 <div class="overview_contents">
+                  <h5>基調講演</h5>
+                  <p>東京大学総括プロジェクト機構特任教授　横張真氏</p>
+                 </div>
+
+ 
+                 <div class="overview_contents">
+                  <h5>取組発表</h5>
+                  <p>東京グリーンビズコラボレーションパートナーや大学院生・大学生</p>
+                 </div>
+
+                 <div class="overview_contents">
+                  <h5>パネルディスカッション</h5>
+                  <p>森林の保全・育成に関わる民間企業と都の職員</p>
+                  <p>※会場定員300名</p>
+                 </div>
                </div>
 
-              <h3>（4）その他の主なコンテンツ</h3>
-              <p>ブース・パネル展示　緑の取組を紹介</p>
-              <p>体験コーナー　大きな両挽きノコギリを使った丸太切り<br>
+              <div class="overview_contents">
+                <h3>（4）その他の主なコンテンツ</h3>
+                <p class="arrow_link">ブース・パネル展示　緑の取組を紹介</p>
+                <p class="arrow_link">体験コーナー　大きな両挽きノコギリを使った丸太切り<br>
                 ※事前申込制（当日受付枠も用意）</p>
-              <h3>（5）入場料</h3>
-              <p>無料</p>
-              <h3>（6）詳細情報及び事前申込方法</h3>
-              <p><a href="#">イベント特設ホームページ（外部サイトへリンク）</a>をご覧ください。</p>
-              <img src="images/01_03.png" alt="QRコード">
+              </div>
+              <div class="overview_contents">
+                <h3>（5）入場料</h3>
+                <p>無料</p>
+              </div>
+              <div class="overview_contents">
+                <h3>（6）詳細情報及び事前申込方法</h3>
+                <p><a href="#">イベント特設ホームページ（外部サイトへリンク）</a>をご覧ください。</p>
+              </div>
+              <div class="wrap_center"><img src="images/01_03.png" alt="QRコード"></div>
              </div>
           </section>
 
           <!-- 2「東京グリーンビズPR動画」の公表について -->
           <section id="second">
-
+            <h2>2　「東京グリーンビズPR動画」の公表について</h2>
+            <div class="wrap_center"><img src="images/01_04.png" alt="グリーンサブライズバナー"></div>
+            <div class="overview">
+              <div class="overview_contents">
+                <h3>（1）制作の目的</h3>
+                <p>都民が緑の価値を知り、身近な緑を育てる「みどりと生きるまちづくり」への参画意欲の向上に繋げるために、PR動画を制作しました。
+                </p>
+              </div>
+              <div class="overview_contents">
+                <h3>（2）出演者</h3>
+                <p>若者やファミリー層の知名度が高いタレントの井上咲楽さん、景井ひなさんに出演いただきました</p>
+              </div>
+              <div class="overview_contents">
+                <h3>（3）内容</h3>
+                <p>2人が駅前、商店街、保育園などの緑が少ない場所をサプライズで緑化する「グリーンサプライズ」を行うことで、人々を笑顔にしました。また、「東京グリーンビズマップ」に掲載されている都内の緑溢れるスポットに訪れることで、東京でも緑とたくさん触れ合えることを紹介しています。</p>
+              </div>
+              <div class="overview_contents">
+                <h3>（4）主な制作動画</h3>
+                <ul>
+                  <li class="noicon">1）フル版（6分29秒）（日・英）</li>
+                  <li class="noicon"></li>2）ダイジェスト版（30秒）（日・英）など</li></ul>
+              </div>
+              <div class="overview_contents">
+                <h3>（5）動画公開日</h3>
+                <p>令和6年11月7日（木曜日）</p>
+              </div>
+              <div class="overview_contents">
+                <h3>（6）閲覧用ページ</h3>
+                <p><a href="#">東京グリーンビズホームページ（政策企画局ホームページ）からご覧いただけます。</a> </p>
+                <div class="wrap_center"><img src="images/01_05.png" alt="QRコード"></div>
+                <ul>
+                  <li class="arrow_link">参考<a href="#">「東京グリーンビズ」ページ（政策企画局ホームページ）</a></li>
+                  <li class="arrow_link">参考<a href="#">「東京グリーンビズコラボレーションパートナー」ページ（政策企画局ホームページ）</a></li>
+                  <li class="arrow_link">参考<a href="#">「東京グリーンビズマップ」ページ（政策企画局ホームページ）</a></li>
+                </ul>
+              </div>
+            </div>
           </section>
 
           <!-- 　出典について -->
           <section id="source">
+          <h2>2　「東京グリーンビズPR動画」の公表について</h2>
+            <div>
+              <p>本取組に関連する画像をご使用される際は、「東京都提供」の旨の記載をお願いします。</p>
+              <div class="inquiry">
+                <!-- 🟥tableタグを使っていたのはなぜ？ -->
+                 <div class="wrap_center gray_area"><p>問い合わせ先<br>
+                  政策企画局計画調整部計画調整課<br>
+                  Eメール　S0015001（at）section.metro.tokyo.jp<br>
+                  ※迷惑メール対策のため、メールアドレスの表記を変更しております。<br>
+                  お手数ですが、（at）を@に置き換えてご利用ください。</p></div>
+              </div>
+            </div>
 
           </section>        
         </article>
@@ -126,10 +229,9 @@
        <!-- フッター -->
       <footer>
         <div id="pnavi">
-          <div>
-            <a href="#top">ページの先頭へ戻る</a>
-          </div>
+            <a href="#top"><div class="pnavi_btn"><p>ページの先頭へ戻る</p></div></a>
         </div>
+        
         <div id="foot_link">
           <div id="foot_link_list">
             <ul>
@@ -170,6 +272,6 @@
         </div>
       </footer>
 
-    </header>
+  
   </body>
 </html> 
